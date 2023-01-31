@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Graphs2</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap.min.css">
+    <script src="../lib/bootstrap.bundle.min.js"></script>
+    <script src="../lib/plotly-2.16.1.min.js"></script>
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-dark p-1 bg-dark fixed-top">
+            <ul class="nav nav-pills">
+                <li class="nav-item navLinks mx-1">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item navLinks mx-1">
+                    <a class="nav-link active" href="graphs.html">Graphics</a>
+                </li>
+                <li class="nav-item hamburger">
+                    <button class="navbar-toggler collapsed " type="button" id="hamburgerButton"
+                        data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent" aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    <div class="collapse fixed-top" id="navbarToggleExternalContent">
+        <ul class="navbar navbar-dark p-0 bg-dark  navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link active" href="graphs.html">Graphics</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container-fluid my-5  text-center" id="graph2">
+
+            <div class="col-sm  md-1" id='sin'>
+            </div>
+                
+    </div>
+    <div class="container-fluid  text-center checks">
+        <div class="forFrm" id="checkSliderBtn">
+            <input type="checkbox" class="elements" name="pole" value="pole" checked> pole
+            <input type="checkbox" class="elements" name="slider" value="slider" checked> slider<br>
+        </div>
+        <popup-info min-vals="4" max-vals="10">
+        </popup-info>
+        <div class="forFrm" id="checkbtn">
+            <label for="checkbox1" class="checki">Function:</label><br>
+            <input type="checkbox" class="checki" name="checkbox1" value="sin" checked> Sin(x)
+            <input type="checkbox" class="checki" name="checkbox2" value="cos" checked> Cos(x)<br>
+        </div>
+        <button id="myBtn" class="text-primary btn btn-dark m-2" name="final">Koniec</button><br>
+    </div>
+    <footer>
+        <p> by Iakov Riumin</p>
+    </footer>
+    <script src="../scripts/baseScript.js"></script>     
+    <script src="../scripts/customStaf.js"></script>                 
+    <script src="../scripts/scrip2.js"></script>  
+     </body>
+    </html>
